@@ -1,5 +1,8 @@
 import { Given, When, Then  } from "@badeball/cypress-cucumber-preprocessor";
-import { helperMethod } from "./support/helpers";
+// The below import line is broken on purpose.
+import { helperMethod } from "../support/helpers";
+// The below, commented, import is the correct alternative to the broken above.
+// import { helperMethod } from "./support/helpers";
 
 Given("A thing is", () => {
   cy.visit('https://google.com');
